@@ -1,0 +1,18 @@
+# GitMarker settings for the Library App team project.
+organization: "GitMarker-Demo-SE-Course"
+repository_prefix: "library-app-team-"
+assignment_type: "team"
+timezone: "Etc/UTC"
+output_dir: "outputs"
+identity_mapping_file: "roster.csv"
+window:
+  since: "2026-10-20T12:26:44Z"
+  until: "2026-10-21T21:15:18Z"
+identities:
+  instructors: ["gmdemo-anon-instructor"]
+  bots: ["github-classroom[bot]", "dependabot[bot]"]
+# This project is shorter than a usual course project, so it asks for fewer commits and pull requests.
+checks:
+  minimum_commits: { threshold: 6 }
+  minimum_pull_requests: { threshold: 3 }
+  stale_branches: { threshold: 1 }
